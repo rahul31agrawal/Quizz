@@ -7,7 +7,7 @@ function Header() {
   return (
     <div className='header'>
         <Link to="/" className='title'>
-        Intuitive quiz app
+        Neog quiz App
         </Link>
         <hr className='divider'/>
         
