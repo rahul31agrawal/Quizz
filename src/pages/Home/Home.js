@@ -4,7 +4,7 @@ import heroImage from "../../assets/quizhome.jpg";
 import { MenuItem, TextField, Button } from "@material-ui/core";
 import Categories from "../../../src/Data/Categories";
 import { useState } from "react";
-
+import NavBar from "../../components/Navbar/Navbar";
 import ErrorAlert from "../../components/errorMessage/errorAlert";
 import { useNavigate } from 'react-router-dom';
 
@@ -28,6 +28,8 @@ function Home({name,setName,fetchQuestions}) {
   }
 
   return (
+    <>
+     <NavBar />
     <div className="content">
       <div className="settings">
         <span className="settingsHeading">Quiz Settings</span>
@@ -85,6 +87,7 @@ function Home({name,setName,fetchQuestions}) {
 
       <img src={heroImage} alt="hero banner" className="banner" />
     </div>
+    </>
   );
 }
 

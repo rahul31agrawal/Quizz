@@ -1,0 +1,29 @@
+.navbar {
+    
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    /* background-color: blue; */
+    padding: 0.6rem 0rem;
+    
+    
+}
+
+.logo{
+    margin-left: 2rem;
+    text-shadow: 1px 1px 4px  #202530;
+    letter-spacing: 0.2rem;
+    color: #202530;
+   
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 2rem;
+    
+}
