@@ -2,7 +2,7 @@ import React, { useEffect,useState } from 'react';
 import {CircularProgress} from "@material-ui/core";
 import './quiz.css';
 import Question from "../../components/Question/Question";
-
+import NavBar from '../../components/Navbar/Navbar';
 function Quiz({name,score,questions,setQuestions,setScore}) {
 const[currQues,setCurrQues] = useState(0)
 const[options,setOptions]=useState()
@@ -30,6 +30,8 @@ const handleShuffle=(options)=>{
 
 
   return (
+    <>
+    <NavBar/>
     <div className='quiz'>
       <span className='subtitle'>Welcome, {name}</span>
 
@@ -63,6 +65,7 @@ const handleShuffle=(options)=>{
         thickness={1}/>
       )}
     </div>
+    </>
   )
 }
 

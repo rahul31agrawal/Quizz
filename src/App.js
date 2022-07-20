@@ -1,12 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header/Header";
+import Rules from "./pages/Rules/Rules";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Quiz from "./pages/Quiz/Quiz";
 import Result from "./pages/Result/Result";
 import { useState } from "react";
 import axios from "axios";
+
+
 
 function App() {
   const [name, setName] = useState("");
@@ -26,7 +28,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
+       
         <Routes>
           <Route
             path="/"
@@ -53,6 +55,10 @@ function App() {
           <Route
             path="/result"
             element={<Result score={score} name={name} />}
+          />
+          <Route
+            path="/rules"
+            element={<Rules />}
           />
         </Routes>
       </div>
