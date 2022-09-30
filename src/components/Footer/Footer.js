@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='footer'>
-        Made with ❤ by Rahul Agrawal
+        Made with <span className='heart'>❤</span> by Rahul Agrawal
     </div>
   )
 }

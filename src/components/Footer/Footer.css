@@ -1,4 +1,9 @@
 .footer{
     text-align: center;
     margin-bottom: 10;
+    font-weight: bold;
+}
+
+.heart{
+    color: red;
 }
