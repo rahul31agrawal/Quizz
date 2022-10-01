@@ -3,6 +3,8 @@ import NavBar from '../../components/Navbar/Navbar';
 import "./Rules.css";
 
 function Rules() {
+
+
   return (
     <>
         <NavBar/>
@@ -22,6 +24,9 @@ function Rules() {
         </li>
         <li> You cannot skip any question</li>
       </ol>
+
+
+      
     </div>
     </>
     
